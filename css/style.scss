@@ -222,10 +222,23 @@ a:hover {
 	.prices-container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 12rem;
+		// gap: 12rem;
 		width: 60%;
 		margin: 0 auto;
 		margin-bottom: 7.2rem;
+	}
+
+	.prices-left-container {
+		border-right: 0.5px solid #000;
+		padding-right: 8rem;
+	}
+	.prices-right-container {
+		border-left: 0.5px solid #000;
+		padding-left: 8rem;
+
+		.prices-category:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	.prices-category {
@@ -340,7 +353,7 @@ a:hover {
 		margin: 0 auto;
 		color: #fff;
 		text-transform: uppercase;
-		font-size: 1.6rem;
+		font-size: 1.2rem;
 		display: flex;
 		justify-content: space-between;
 
