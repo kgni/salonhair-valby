@@ -44,7 +44,7 @@ a:hover {
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 .hero .main-nav ul {
   display: flex;
   gap: 2.4rem;
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 1px;
 }
 .hero .opening-hours-section {
@@ -163,7 +163,7 @@ a:hover {
   gap: 2.4rem;
 }
 .om-section .om-text-container p {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 .om-section .om-img-container {
   background-color: #8c0d0d;
