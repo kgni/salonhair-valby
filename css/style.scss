@@ -28,6 +28,10 @@ h3 {
 	font-size: 2rem;
 }
 
+p {
+	font-size: 1.6rem;
+}
+
 a:link,
 a:visited {
 	color: #fff;
@@ -171,7 +175,7 @@ a:hover {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	align-items: center;
-	margin-bottom: 7.2rem;
+	// margin-bottom: 7.2rem;
 
 	.om-text-container {
 		padding: 0 11.2rem;
@@ -191,8 +195,139 @@ a:hover {
 }
 
 .prices-section {
+	position: relative;
+	border-bottom: 25px solid #000;
+	background-color: #e9e9e9;
+
+	.left-rectangle {
+		background-color: #000;
+		width: 50px;
+		height: 100%;
+		position: absolute;
+	}
+
+	h2 {
+		padding-top: 7.2rem;
+		text-align: center;
+		font-weight: 900;
+		margin-bottom: 0.6rem;
+	}
+
+	p {
+		text-align: center;
+		margin-bottom: 4.8rem;
+		font-style: italic;
+	}
+
+	.prices-container {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 12rem;
+		width: 60%;
+		margin: 0 auto;
+		margin-bottom: 7.2rem;
+	}
+
+	.prices-category {
+		margin-bottom: 3.6rem;
+		h3 {
+			font-size: 2.4rem;
+			color: #000;
+			margin-bottom: 1.6rem;
+			font-weight: 900;
+		}
+
+		h5 {
+			font-size: 1.4rem;
+			text-transform: uppercase;
+			font-weight: 900;
+		}
+	}
+
+	.prices-subcategory {
+		margin-bottom: 1.8rem;
+		h4 {
+			font-size: 1.8rem;
+			text-transform: uppercase;
+			margin-bottom: 1.2rem;
+			font-weight: 600;
+			text-decoration: underline;
+			font-weight: 900;
+		}
+	}
+
+	.prices-items {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+	}
+
+	.price-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.price-name {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	.price-cost {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+	}
+
+	.hair-length,
+	.treatment-type {
+		display: flex;
+		flex-direction: column;
+		gap: 0.8rem;
+
+		.price-item {
+			&:last-child {
+				margin-bottom: 1.2rem;
+			}
+		}
+
+		.price-name,
+		.price-cost {
+			font-weight: 400;
+		}
+	}
+
+	.prices-right-container {
+		.price-name {
+			font-weight: 400;
+		}
+	}
+
+	.with-hat {
+		margin-top: 1.2rem;
+	}
+}
+
+.find-os-section {
 	h2 {
 		text-align: center;
+		padding-top: 7.2rem;
+	}
+
+	p {
+		text-align: center;
+		margin-bottom: 2.4rem;
+	}
+
+	.map-container {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 7.2rem;
+
+		iframe {
+			min-width: 1200px;
+			height: 500px;
+		}
 	}
 }
 
