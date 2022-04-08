@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Source Serif Pro", serif;
 }
 
 h1,
@@ -37,6 +37,9 @@ a:visited {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+  cursor: pointer;
+  font-family: "Source Serif Pro", serif;
+  letter-spacing: 1px;
 }
 
 a:hover {
@@ -55,7 +58,7 @@ a:hover {
   background-color: black;
   background-image: url("../img/hero04-flipped-compressed.jpg");
   background-size: 1400px;
-  background-position: -30rem -10rem;
+  background-position: -25rem -7rem;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
@@ -69,18 +72,19 @@ a:hover {
 }
 .hero .main-nav .logo {
   color: #fff;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 900;
   text-align: center;
   position: absolute;
   right: 50%;
   transform: translate(50%);
-  font-size: 3.6rem;
+  font-size: 4.8rem;
 }
 .hero .main-nav .logo span {
   display: block;
   font-size: 2rem;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .hero .main-nav ul {
   display: flex;
@@ -100,6 +104,7 @@ a:hover {
 }
 .hero .opening-hours-card h1 {
   text-align: center;
+  letter-spacing: 3px;
 }
 .hero .opening-hours-card .opening-hours-card-title {
   margin-bottom: 4.2rem;
@@ -117,6 +122,9 @@ a:hover {
 }
 .hero .opening-hours-card .opening-hours .opening-hour .opening-day {
   min-width: 100px;
+}
+.hero .opening-hours-card .opening-hours .opening-hour h3 {
+  letter-spacing: 1px;
 }
 .hero .opening-hours-card .opening-hours .opening-hour h3:last-child {
   flex: 1;
@@ -143,9 +151,9 @@ a:hover {
 }
 .hero .opening-hours-card .address {
   text-align: center;
-}
-.hero .opening-hours-card .address h3 {
+  display: block;
   font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .om-section {
@@ -172,7 +180,6 @@ a:hover {
 
 .prices-section {
   position: relative;
-  background-color: #e9e9e9;
   padding-bottom: 7.2rem;
 }
 .prices-section .left-rectangle {
@@ -186,11 +193,14 @@ a:hover {
   text-align: center;
   font-weight: 900;
   margin-bottom: 0.6rem;
+  font-size: 6.8rem;
+  letter-spacing: 5px;
 }
 .prices-section p {
   text-align: center;
   margin-bottom: 4.8rem;
   font-style: italic;
+  letter-spacing: 1px;
 }
 .prices-section .prices-container {
   display: grid;
@@ -199,11 +209,9 @@ a:hover {
   margin: 0 auto;
 }
 .prices-section .prices-left-container {
-  border-right: 0.5px solid #000;
   padding-right: 8rem;
 }
 .prices-section .prices-right-container {
-  border-left: 0.5px solid #000;
   padding-left: 8rem;
 }
 .prices-section .prices-right-container .prices-category:last-child {
@@ -213,26 +221,28 @@ a:hover {
   margin-bottom: 3.6rem;
 }
 .prices-section .prices-category h3 {
-  font-size: 2.4rem;
+  font-size: 3.6rem;
   color: #000;
   margin-bottom: 1.6rem;
   font-weight: 900;
+  letter-spacing: 2px;
 }
 .prices-section .prices-category h5 {
   font-size: 1.4rem;
   text-transform: uppercase;
   font-weight: 900;
+  letter-spacing: 1px;
 }
 .prices-section .prices-subcategory {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2.8rem;
 }
 .prices-section .prices-subcategory h4 {
   font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
   font-weight: 600;
-  text-decoration: underline;
   font-weight: 900;
+  letter-spacing: 1px;
 }
 .prices-section .prices-items {
   display: flex;
@@ -243,11 +253,19 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  letter-spacing: 1px;
+  gap: 0.6rem;
+}
+.prices-section .price-item .dot {
+  flex: 1;
+  align-self: center;
+  border-bottom: 1px dotted black;
+  margin-top: 0.8rem;
 }
 .prices-section .price-name {
   font-size: 1.4rem;
   text-transform: uppercase;
-  font-weight: 600;
+  letter-spacing: 1px;
 }
 .prices-section .price-cost {
   font-size: 1.4rem;
