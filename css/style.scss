@@ -169,6 +169,8 @@ a:hover {
 	}
 }
 
+// ABOUT SECTION
+
 .om-section {
 	min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 	height: calc(var(--vh, 1vh) * 100);
@@ -194,10 +196,12 @@ a:hover {
 	}
 }
 
+// PRICES SECTION
+
 .prices-section {
 	position: relative;
-	border-bottom: 25px solid #000;
 	background-color: #e9e9e9;
+	padding-bottom: 7.2rem;
 
 	.left-rectangle {
 		background-color: #000;
@@ -225,7 +229,6 @@ a:hover {
 		// gap: 12rem;
 		width: 60%;
 		margin: 0 auto;
-		margin-bottom: 7.2rem;
 	}
 
 	.prices-left-container {
