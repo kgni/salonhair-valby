@@ -214,7 +214,7 @@ a:hover {
 .prices-section {
 	position: relative;
 	// background-color: #e9e9e9;
-	padding-bottom: 7.2rem;
+	margin-bottom: 7.2rem;
 	// background: url('../img/overlay-texture01.jpg');
 	display: flex;
 	justify-content: center;
@@ -228,7 +228,6 @@ a:hover {
 		min-height: 100%;
 		left: 0;
 		position: absolute;
-		overflow-y: hidden;
 		z-index: -1;
 	}
 
@@ -365,7 +364,6 @@ a:hover {
 .find-os-section {
 	h2 {
 		text-align: center;
-		padding-top: 7.2rem;
 	}
 
 	p {

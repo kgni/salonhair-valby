@@ -178,7 +178,7 @@ a:hover {
 
 .prices-section {
   position: relative;
-  padding-bottom: 7.2rem;
+  margin-bottom: 7.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,7 +191,6 @@ a:hover {
   min-height: 100%;
   left: 0;
   position: absolute;
-  overflow-y: hidden;
   z-index: -1;
 }
 .prices-section h2 {
@@ -298,7 +297,6 @@ a:hover {
 
 .find-os-section h2 {
   text-align: center;
-  padding-top: 7.2rem;
 }
 .find-os-section p {
   text-align: center;
