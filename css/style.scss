@@ -216,12 +216,20 @@ a:hover {
 	// background-color: #e9e9e9;
 	padding-bottom: 7.2rem;
 	// background: url('../img/overlay-texture01.jpg');
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 50px;
 
 	.left-rectangle {
 		background-color: #000;
 		width: 50px;
-		height: 100%;
+		min-height: 100%;
+		left: 0;
 		position: absolute;
+		overflow-y: hidden;
+		z-index: -1;
 	}
 
 	h2 {
@@ -244,7 +252,6 @@ a:hover {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		column-gap: 12rem;
-		width: 60%;
 		margin: 0 auto;
 	}
 
@@ -296,6 +303,7 @@ a:hover {
 		display: flex;
 		flex-direction: column;
 		gap: 0.8rem;
+		width: 450px;
 	}
 
 	.price-item {
@@ -403,6 +411,14 @@ a:hover {
 
 // MEDIA QUERIES
 
+@media (max-width: 1170px) {
+	.prices-section {
+		.prices-container {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
 @media (max-width: 1136px) {
 	.om-section {
 		grid-template-columns: 1fr;
@@ -451,6 +467,24 @@ a:hover {
 	}
 }
 
+@media (max-width: 600px) {
+	.om-section {
+		.om-text-container {
+			padding: 0 6rem;
+		}
+	}
+	.prices-section {
+		padding-left: 25px;
+		.left-rectangle {
+			width: 25px;
+		}
+
+		.prices-items {
+			width: 400px;
+		}
+	}
+}
+
 @media (max-width: 540px) {
 	.main-footer {
 		.main-footer-content {
@@ -486,6 +520,103 @@ a:hover {
 
 		.created-by {
 			align-self: center;
+		}
+	}
+}
+
+@media (max-width: 510px) {
+	.hero {
+		.opening-hours-card {
+			.opening-hours {
+				.line {
+					width: 3.2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.hero {
+		.opening-hours-card {
+			padding: 2.4rem;
+			.opening-hours {
+				.line {
+					width: 3.2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 402px) {
+	h3 {
+		font-size: 2rem;
+	}
+	.hero {
+		.opening-hours-card {
+			padding: 2.4rem;
+			.opening-hours {
+				.line {
+					width: 3.2rem;
+				}
+			}
+		}
+	}
+	.om-section {
+		.om-text-container {
+			padding: 0 3rem;
+		}
+	}
+}
+
+@media (max-width: 387px) {
+	.hero {
+		.opening-hours-card {
+			.opening-hours {
+				.opening-hour {
+					h3 {
+						font-size: 1.4rem;
+					}
+					.opening-day {
+						min-width: 69px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 342px) {
+	h2 {
+		font-size: 3.6rem;
+	}
+
+	.om-section {
+		.om-text-container {
+			padding: 0 3rem;
+
+			p {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 323px) {
+	.hero {
+		.opening-hours-card {
+			.opening-hours {
+				.opening-hour {
+					gap: 3.4rem;
+					h3 {
+						font-size: 1.4rem;
+					}
+					.opening-day {
+						min-width: 69px;
+					}
+				}
+			}
 		}
 	}
 }
