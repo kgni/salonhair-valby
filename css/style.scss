@@ -243,18 +243,18 @@ a:hover {
 	.prices-container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		// gap: 12rem;
+		column-gap: 12rem;
 		width: 60%;
 		margin: 0 auto;
 	}
 
 	.prices-left-container {
 		// border-right: 0.5px solid #000;
-		padding-right: 8rem;
+		// padding-right: 4rem;
 	}
 	.prices-right-container {
 		// border-left: 0.5px solid #000;
-		padding-left: 8rem;
+		// padding-left: 4rem;
 
 		.prices-category:last-child {
 			margin-bottom: 0;

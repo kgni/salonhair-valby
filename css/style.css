@@ -203,14 +203,10 @@ a:hover {
 .prices-section .prices-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 12rem;
+       column-gap: 12rem;
   width: 60%;
   margin: 0 auto;
-}
-.prices-section .prices-left-container {
-  padding-right: 8rem;
-}
-.prices-section .prices-right-container {
-  padding-left: 8rem;
 }
 .prices-section .prices-right-container .prices-category:last-child {
   margin-bottom: 0;
