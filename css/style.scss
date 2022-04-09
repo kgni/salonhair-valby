@@ -403,6 +403,12 @@ a:hover {
 
 // MEDIA QUERIES
 
+@media (max-width: 1136px) {
+	.om-section {
+		grid-template-columns: 1fr;
+	}
+}
+
 @media (max-width: 960px) {
 	.container {
 		width: 100%;
