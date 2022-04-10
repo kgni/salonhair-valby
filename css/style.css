@@ -51,10 +51,81 @@ a:hover {
   margin: 0 auto;
 }
 
+.loader-container {
+  background-color: #000;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-container h1 {
+  color: #fff;
+  text-transform: lowercase;
+  font-weight: 900;
+  text-align: center;
+  font-size: 4.8rem;
+  line-height: 1.2;
+  margin-bottom: 4.8rem;
+}
+.loader-container h1 span {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.balls > span {
+  display: inline-block;
+  background-color: #fff;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  margin: 0 4px;
+  transform: translate3d(0);
+  -webkit-animation: bounce 0.6s infinite alternate;
+          animation: bounce 0.6s infinite alternate;
+}
+
+.balls > span:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.balls > span:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+@-webkit-keyframes bounce {
+  to {
+    width: 12px;
+    height: 12px;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+
+@keyframes bounce {
+  to {
+    width: 12px;
+    height: 12px;
+    transform: translate3d(0, -16px, 0);
+  }
+}
+main {
+  opacity: 0;
+  display: none;
+  transition: opacity 1s ease-in;
+  overflow-x: hidden;
+}
+
 .hero {
   min-height: 100vh;
   /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
   background-color: black;
   background-image: url("../img/hero04-flipped-compressed.jpg");
   background-size: 1400px;
@@ -178,7 +249,7 @@ a:hover {
 
 .prices-section {
   position: relative;
-  margin-bottom: 7.2rem;
+  margin-bottom: 9.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -300,15 +371,15 @@ a:hover {
 }
 .find-os-section p {
   text-align: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 4rem;
 }
 .find-os-section .map-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 7.2rem;
+  margin-bottom: 4rem;
 }
 .find-os-section .map-container iframe {
-  min-width: 1200px;
+  width: 100%;
   height: 500px;
 }
 
@@ -351,6 +422,7 @@ a:hover {
 
   .hero {
     background-image: linear(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero04-flipped-compressed.jpg");
+    padding-bottom: 4.8rem;
   }
   .hero .main-nav {
     justify-content: center;
@@ -374,6 +446,10 @@ a:hover {
   }
   .main-footer .created-by {
     align-self: flex-end;
+  }
+
+  .find-os-section .map-container {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 600px) {
@@ -421,6 +497,10 @@ a:hover {
   .main-footer .created-by {
     align-self: center;
   }
+
+  .find-os-section h2 {
+    font-size: 3.6rem;
+  }
 }
 @media (max-width: 510px) {
   .hero .opening-hours-card .opening-hours .line {
@@ -449,6 +529,13 @@ a:hover {
 
   .om-section .om-text-container {
     padding: 0 3rem;
+  }
+
+  .find-os-section h2 {
+    font-size: 2.8rem;
+  }
+  .find-os-section p {
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 387px) {
