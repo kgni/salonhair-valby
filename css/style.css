@@ -460,6 +460,25 @@ main {
   .prices-section {
     padding-left: 25px;
   }
+  .prices-section .price-item {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .prices-section .price-item .dot {
+    display: none;
+  }
+  .prices-section .price-name {
+    display: flex;
+  }
+  .prices-section .price-name::after {
+    display: inline-flex;
+    flex-grow: 1;
+    content: "";
+    border-bottom: 1px solid black;
+  }
+  .prices-section .price-cost {
+    align-self: end;
+  }
   .prices-section .left-rectangle {
     width: 25px;
   }
@@ -513,6 +532,27 @@ main {
   }
   .hero .opening-hours-card .opening-hours .line {
     width: 3.2rem;
+  }
+
+  .prices-section {
+    padding-left: 0;
+  }
+  .prices-section .left-rectangle {
+    display: none;
+  }
+  .prices-section .prices-category h3 {
+    font-size: 3rem;
+  }
+  .prices-section .prices-category h4 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 432px) {
+  .prices-section .prices-container {
+    padding: 0 1.2rem;
+  }
+  .prices-section .prices-items {
+    width: unset;
   }
 }
 @media (max-width: 402px) {

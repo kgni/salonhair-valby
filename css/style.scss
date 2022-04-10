@@ -550,6 +550,29 @@ main {
 	}
 	.prices-section {
 		padding-left: 25px;
+		.price-item {
+			display: grid;
+			grid-template-columns: auto auto;
+
+			.dot {
+				display: none;
+			}
+		}
+
+		.price-name {
+			display: flex;
+		}
+
+		.price-name::after {
+			display: inline-flex;
+			flex-grow: 1;
+			content: '';
+			border-bottom: 1px solid black;
+		}
+
+		.price-cost {
+			align-self: end;
+		}
 		.left-rectangle {
 			width: 25px;
 		}
@@ -626,6 +649,35 @@ main {
 					width: 3.2rem;
 				}
 			}
+		}
+	}
+
+	.prices-section {
+		padding-left: 0;
+
+		.left-rectangle {
+			display: none;
+		}
+
+		.prices-category {
+			h3 {
+				font-size: 3rem;
+			}
+
+			h4 {
+				font-size: 1.4rem;
+			}
+		}
+	}
+}
+
+@media (max-width: 432px) {
+	.prices-section {
+		.prices-container {
+			padding: 0 1.2rem;
+		}
+		.prices-items {
+			width: unset;
 		}
 	}
 }
