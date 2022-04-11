@@ -79,6 +79,10 @@ a:hover {
   text-transform: uppercase;
 }
 
+.balls {
+  height: 16px;
+}
+
 .balls > span {
   display: inline-block;
   background-color: #fff;

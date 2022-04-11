@@ -1,7 +1,5 @@
 // TODO: Fix background image on all devices (needs to have filter on top on it on certain widths, also needs to fix position
 
-// TODO: Fix pricing, when name goes to new line, we want price to be on one line still and at the bottom of parent container.. We still want the dots to be placed like they are on single lines that are not breaking
-
 // General styles
 
 html {
@@ -89,6 +87,10 @@ a:hover {
 			text-transform: uppercase;
 		}
 	}
+}
+
+.balls {
+	height: 16px;
 }
 
 .balls > span {
