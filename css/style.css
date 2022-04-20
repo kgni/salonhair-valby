@@ -472,6 +472,7 @@ main {
   }
   .find-os-section .map-container iframe {
     width: 90%;
+    height: 400px;
   }
 }
 @media (max-width: 1136px) {
