@@ -138,6 +138,7 @@ main {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
+  padding-bottom: 9.6rem;
 }
 .hero .overlay {
   display: none;
@@ -266,6 +267,7 @@ main {
 
 .prices-section {
   position: relative;
+  background-color: #f3f3f3;
   padding: 9.6rem 0;
   display: flex;
   justify-content: center;
@@ -331,6 +333,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 1.2rem;
   font-weight: 600;
+  text-decoration: underline;
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -386,7 +389,6 @@ main {
 }
 
 .find-os-section {
-  background-color: #f3f3f3;
   padding: 9.6rem 0;
 }
 .find-os-section h2 {
@@ -475,10 +477,15 @@ main {
 @media (max-width: 1136px) {
   .om-section {
     grid-template-columns: 1fr;
-    min-height: 75vh;
+    min-height: unset;
+  }
+  .om-section .om-text-container {
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
   }
   .om-section .om-img-container {
     background-image: unset;
+    padding: 7.2rem 0;
   }
 }
 @media (max-width: 1130px) {
@@ -490,6 +497,7 @@ main {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero04-flipped-compressed.jpg");
     position: relative;
     background-repeat: unset;
+    padding-bottom: 4.8rem;
   }
   .hero .overlay {
     display: block;
@@ -498,9 +506,6 @@ main {
     background-color: rgba(0, 0, 0, 0.699);
     position: absolute;
     z-index: -1;
-  }
-  .hero .main-header {
-    padding-bottom: 4.8rem;
   }
   .hero .main-nav {
     justify-content: center;
@@ -609,8 +614,12 @@ main {
   }
 }
 @media (max-width: 480px) {
+  .hero .main-nav {
+    padding: 3.2rem 0 0 1.2rem;
+  }
   .hero .opening-hours-card {
     padding: 2.4rem;
+    transform: scale(0.9);
   }
   .hero .opening-hours-card .opening-hours .line {
     width: 3.2rem;
@@ -662,8 +671,12 @@ main {
     font-size: 2rem;
   }
 
+  .hero .main-nav {
+    padding: 3.2rem 0 0 1.2rem;
+  }
   .hero .opening-hours-card {
     padding: 2.4rem;
+    transform: scale(0.9);
   }
   .hero .opening-hours-card .opening-hours .line {
     width: 3.2rem;
