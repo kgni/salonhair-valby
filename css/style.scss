@@ -498,9 +498,18 @@ main {
 			display: flex;
 			gap: 4.2rem;
 			letter-spacing: 1px;
+			align-items: center;
 			.company-name {
 				font-weight: 900;
+				font-size: 1.8rem;
 			}
+		}
+	}
+
+	.created-by {
+		a:link {
+			margin-left: 4px;
+			font-size: 1.8rem;
 		}
 	}
 }
