@@ -250,6 +250,11 @@ main {
 .om-section .om-img-container {
   background-color: #8c0d0d;
   height: 100%;
+  background-image: url("/img/about.png");
+  background-size: 800px;
+  background-position-x: right;
+  background-position-y: 50px;
+  background-repeat: no-repeat;
 }
 
 .prices-section {
