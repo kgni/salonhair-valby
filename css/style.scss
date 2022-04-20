@@ -1,4 +1,5 @@
-// TODO: Fix background image on all devices (needs to have filter on top on it on certain widths, also needs to fix position
+// TODO - AOS implementation
+// TODO - About image (see figma file)
 
 // General styles
 
@@ -59,13 +60,15 @@ a:hover {
 .loader-container {
 	background-color: #000;
 	min-height: 100vh;
-	position: absolute;
-	z-index: 999;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+
+	.loader-text-container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		position: absolute;
+		top: 30%;
+		width: 100%;
+	}
 }
 .loader-container {
 	h1 {
@@ -78,7 +81,7 @@ a:hover {
 		// transform: translate(50%);
 		font-size: 4.8rem;
 		line-height: 1.2;
-		margin-bottom: 4.8rem;
+		margin-bottom: 2.4rem;
 		span {
 			display: block;
 			font-size: 1.4rem;
@@ -90,7 +93,7 @@ a:hover {
 }
 
 .balls {
-	height: 16px;
+	height: 8px;
 }
 
 .balls > span {
@@ -114,9 +117,9 @@ a:hover {
 
 @keyframes bounce {
 	to {
-		width: 12px;
-		height: 12px;
-		transform: translate3d(0, -16px, 0);
+		width: 8px;
+		height: 8px;
+		transform: translate3d(0, -8px, 0);
 	}
 }
 
