@@ -1,4 +1,3 @@
-// TODO - AOS implementation
 // TODO - About image (see figma file)
 
 // General styles
@@ -144,6 +143,10 @@ main {
 	position: relative;
 	// z-index: ;
 
+	.overlay {
+		display: none;
+	}
+
 	.main-nav {
 		display: flex;
 		justify-content: flex-end;
@@ -153,8 +156,8 @@ main {
 
 		ul {
 			display: flex;
-			gap: 2.4rem;
-			font-size: 2rem;
+			gap: 3.2rem;
+			font-size: 2.4rem;
 			letter-spacing: 1px;
 		}
 	}
@@ -270,6 +273,10 @@ main {
 	align-items: center;
 	// margin-bottom: 7.2rem;
 
+	h2 {
+		font-weight: 900;
+		font-size: 4.8rem;
+	}
 	.om-text-container {
 		padding: 0 11.2rem;
 		display: flex;
@@ -285,10 +292,11 @@ main {
 		background-color: #8c0d0d;
 		height: 100%;
 		background-image: url('/img/about.png');
-		background-size: 800px;
+		background-size: 85%;
 		background-position-x: right;
-		background-position-y: 50px;
+		background-position-y: 70%;
 		background-repeat: no-repeat;
+
 		// background-attachment: fixed;
 	}
 }
@@ -298,7 +306,8 @@ main {
 .prices-section {
 	position: relative;
 	// background-color: #e9e9e9;
-	margin-bottom: 9.6rem;
+	padding: 9.6rem 0;
+	// margin-bottom: 4.8rem;
 	// background: url('../img/overlay-texture01.jpg');
 	display: flex;
 	justify-content: center;
@@ -311,12 +320,12 @@ main {
 		width: 50px;
 		min-height: 100%;
 		left: 0;
+		top: 0;
 		position: absolute;
 		z-index: -1;
 	}
 
 	h2 {
-		padding-top: 7.2rem;
 		text-align: center;
 		font-weight: 900;
 		margin-bottom: 0.6rem;
@@ -355,9 +364,11 @@ main {
 		margin-bottom: 3.6rem;
 		h3 {
 			font-size: 3.6rem;
-			color: #000;
+			color: #fff;
+			background: #000;
 			margin-bottom: 1.6rem;
-			font-weight: 900;
+			font-weight: 600;
+			padding: 0 1.2rem;
 			letter-spacing: 2px;
 		}
 
@@ -446,23 +457,26 @@ main {
 }
 
 .find-os-section {
+	background-color: #f3f3f3;
+	padding: 9.6rem 0;
 	h2 {
 		text-align: center;
 	}
 
 	p {
 		text-align: center;
-		margin-bottom: 4rem;
+		margin-bottom: 6.8rem;
 	}
 
 	.map-container {
 		display: flex;
 		justify-content: center;
-		margin-bottom: 4rem;
 
 		iframe {
-			width: 100%;
-			height: 500px;
+			width: 80%;
+			height: 700px;
+
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		}
 	}
 }
@@ -514,6 +528,10 @@ main {
 
 		background-position: -60rem -10rem;
 	}
+	.prices-section,
+	.find-os-section {
+		padding: 7.2rem 0;
+	}
 }
 @media (max-width: 1230px) {
 	.hero {
@@ -529,12 +547,28 @@ main {
 			grid-template-columns: 1fr;
 		}
 	}
+
+	.find-os-section {
+		padding-top: 4.8rem;
+		p {
+			margin-bottom: 4.8rem;
+		}
+		.map-container {
+			iframe {
+				width: 90%;
+			}
+		}
+	}
 }
 
 @media (max-width: 1136px) {
 	.om-section {
 		grid-template-columns: 1fr;
 		min-height: 75vh;
+
+		.om-img-container {
+			background-image: unset;
+		}
 	}
 }
 
@@ -544,11 +578,22 @@ main {
 	}
 
 	.hero {
-		background-image: linear(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
 			url('../img/hero04-flipped-compressed.jpg');
+		position: relative;
+		background-repeat: unset;
 
-		padding-bottom: 4.8rem;
-
+		.overlay {
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.699);
+			position: absolute;
+			z-index: -1;
+		}
+		.main-header {
+			padding-bottom: 4.8rem;
+		}
 		.main-nav {
 			justify-content: center;
 			margin-bottom: 0;
@@ -703,7 +748,12 @@ main {
 	}
 
 	.prices-section {
-		padding: 0 0.4rem;
+		padding: 4.8rem 0.4rem;
+
+		h2 {
+			font-size: 4.8rem;
+			margin-bottom: 0;
+		}
 
 		.left-rectangle {
 			display: none;
@@ -711,7 +761,14 @@ main {
 
 		.prices-category {
 			h3 {
-				font-size: 3rem;
+				width: 100%;
+				background-color: #000;
+				color: #fff;
+				font-size: 2.4rem;
+				// text-decoration: underline;
+				padding: 0.6rem;
+				text-align: center;
+				font-weight: 600;
 			}
 
 			h4 {
@@ -727,8 +784,9 @@ main {
 
 @media (max-width: 432px) {
 	.prices-section {
+		padding: 4.8rem 0;
 		h2 {
-			padding-top: 4.8rem;
+			padding: unset;
 		}
 		.prices-container {
 			padding: 0 1.2rem;
@@ -772,6 +830,13 @@ main {
 
 @media (max-width: 387px) {
 	.hero {
+		.main-nav {
+			ul {
+				gap: 2.4rem;
+				font-size: 2rem;
+				letter-spacing: 1px;
+			}
+		}
 		.opening-hours-card {
 			.opening-hours {
 				.opening-hour {
@@ -788,7 +853,7 @@ main {
 
 	.find-os-section {
 		h2 {
-			padding: 0 1.2rem;
+			padding: 3.2rem 1.2rem 0 1.2rem;
 		}
 
 		p {

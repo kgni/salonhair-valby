@@ -139,6 +139,9 @@ main {
   background-attachment: fixed;
   position: relative;
 }
+.hero .overlay {
+  display: none;
+}
 .hero .main-nav {
   display: flex;
   justify-content: flex-end;
@@ -148,8 +151,8 @@ main {
 }
 .hero .main-nav ul {
   display: flex;
-  gap: 2.4rem;
-  font-size: 2rem;
+  gap: 3.2rem;
+  font-size: 2.4rem;
   letter-spacing: 1px;
 }
 .hero .opening-hours-section {
@@ -238,6 +241,10 @@ main {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
+.om-section h2 {
+  font-weight: 900;
+  font-size: 4.8rem;
+}
 .om-section .om-text-container {
   padding: 0 11.2rem;
   display: flex;
@@ -251,15 +258,15 @@ main {
   background-color: #8c0d0d;
   height: 100%;
   background-image: url("/img/about.png");
-  background-size: 800px;
+  background-size: 85%;
   background-position-x: right;
-  background-position-y: 50px;
+  background-position-y: 70%;
   background-repeat: no-repeat;
 }
 
 .prices-section {
   position: relative;
-  margin-bottom: 9.6rem;
+  padding: 9.6rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,11 +278,11 @@ main {
   width: 50px;
   min-height: 100%;
   left: 0;
+  top: 0;
   position: absolute;
   z-index: -1;
 }
 .prices-section h2 {
-  padding-top: 7.2rem;
   text-align: center;
   font-weight: 900;
   margin-bottom: 0.6rem;
@@ -303,9 +310,11 @@ main {
 }
 .prices-section .prices-category h3 {
   font-size: 3.6rem;
-  color: #000;
+  color: #fff;
+  background: #000;
   margin-bottom: 1.6rem;
-  font-weight: 900;
+  font-weight: 600;
+  padding: 0 1.2rem;
   letter-spacing: 2px;
 }
 .prices-section .prices-category h5 {
@@ -376,21 +385,25 @@ main {
   margin-top: 1.2rem;
 }
 
+.find-os-section {
+  background-color: #f3f3f3;
+  padding: 9.6rem 0;
+}
 .find-os-section h2 {
   text-align: center;
 }
 .find-os-section p {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 6.8rem;
 }
 .find-os-section .map-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
 }
 .find-os-section .map-container iframe {
-  width: 100%;
-  height: 500px;
+  width: 80%;
+  height: 700px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .main-footer {
@@ -432,6 +445,11 @@ main {
     background-image: url("../img/hero04-flipped-compressed.jpg");
     background-position: -60rem -10rem;
   }
+
+  .prices-section,
+.find-os-section {
+    padding: 7.2rem 0;
+  }
 }
 @media (max-width: 1230px) {
   .hero {
@@ -443,11 +461,24 @@ main {
   .prices-section .prices-container {
     grid-template-columns: 1fr;
   }
+
+  .find-os-section {
+    padding-top: 4.8rem;
+  }
+  .find-os-section p {
+    margin-bottom: 4.8rem;
+  }
+  .find-os-section .map-container iframe {
+    width: 90%;
+  }
 }
 @media (max-width: 1136px) {
   .om-section {
     grid-template-columns: 1fr;
     min-height: 75vh;
+  }
+  .om-section .om-img-container {
+    background-image: unset;
   }
 }
 @media (max-width: 1130px) {
@@ -456,7 +487,19 @@ main {
   }
 
   .hero {
-    background-image: linear(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero04-flipped-compressed.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero04-flipped-compressed.jpg");
+    position: relative;
+    background-repeat: unset;
+  }
+  .hero .overlay {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.699);
+    position: absolute;
+    z-index: -1;
+  }
+  .hero .main-header {
     padding-bottom: 4.8rem;
   }
   .hero .main-nav {
@@ -574,13 +617,23 @@ main {
   }
 
   .prices-section {
-    padding: 0 0.4rem;
+    padding: 4.8rem 0.4rem;
+  }
+  .prices-section h2 {
+    font-size: 4.8rem;
+    margin-bottom: 0;
   }
   .prices-section .left-rectangle {
     display: none;
   }
   .prices-section .prices-category h3 {
-    font-size: 3rem;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-size: 2.4rem;
+    padding: 0.6rem;
+    text-align: center;
+    font-weight: 600;
   }
   .prices-section .prices-category h4 {
     font-size: 1.4rem;
@@ -591,8 +644,11 @@ main {
   }
 }
 @media (max-width: 432px) {
+  .prices-section {
+    padding: 4.8rem 0;
+  }
   .prices-section h2 {
-    padding-top: 4.8rem;
+    padding: unset;
   }
   .prices-section .prices-container {
     padding: 0 1.2rem;
@@ -628,6 +684,11 @@ main {
   }
 }
 @media (max-width: 387px) {
+  .hero .main-nav ul {
+    gap: 2.4rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
   .hero .opening-hours-card .opening-hours .opening-hour h3 {
     font-size: 1.4rem;
   }
@@ -636,7 +697,7 @@ main {
   }
 
   .find-os-section h2 {
-    padding: 0 1.2rem;
+    padding: 3.2rem 1.2rem 0 1.2rem;
   }
   .find-os-section p {
     padding: 0 1.2rem;
