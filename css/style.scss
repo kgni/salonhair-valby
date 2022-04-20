@@ -323,7 +323,7 @@ main {
 		left: 0;
 		top: 0;
 		position: absolute;
-		z-index: -1;
+		z-index: 1;
 	}
 
 	h2 {
@@ -539,7 +539,7 @@ main {
 	}
 	.prices-section,
 	.find-os-section {
-		padding: 7.2rem 0;
+		padding: 3.6rem 0;
 	}
 }
 @media (max-width: 1230px) {
@@ -558,7 +558,6 @@ main {
 	}
 
 	.find-os-section {
-		padding-top: 4.8rem;
 		p {
 			margin-bottom: 4.8rem;
 		}
@@ -651,7 +650,7 @@ main {
 @media (max-width: 600px) {
 	.om-section {
 		.om-text-container {
-			padding: 3rem 6rem;
+			padding: 3.6rem 6rem;
 		}
 	}
 	.prices-section {
@@ -767,7 +766,7 @@ main {
 	}
 
 	.prices-section {
-		padding: 4.8rem 0.4rem;
+		padding: 3.6rem 0.4rem;
 
 		h2 {
 			font-size: 4.8rem;
@@ -798,12 +797,24 @@ main {
 
 	.om-section {
 		min-height: 85vh;
+
+		.om-text-container {
+			gap: 1.6rem;
+
+			p {
+				font-size: 1.6rem;
+			}
+		}
+
+		h2 {
+			font-size: 3.2rem;
+		}
 	}
 }
 
 @media (max-width: 432px) {
 	.prices-section {
-		padding: 4.8rem 0;
+		padding: 3.6rem 0;
 		h2 {
 			padding: unset;
 		}
@@ -837,7 +848,7 @@ main {
 	.om-section {
 		min-height: 85vh;
 		.om-text-container {
-			padding: 3rem 3rem;
+			padding: 3.6rem 3rem;
 		}
 	}
 	.find-os-section {
@@ -875,10 +886,6 @@ main {
 	}
 
 	.find-os-section {
-		h2 {
-			padding: 3.2rem 1.2rem 0 1.2rem;
-		}
-
 		p {
 			padding: 0 1.2rem;
 		}
@@ -892,7 +899,7 @@ main {
 
 	.om-section {
 		.om-text-container {
-			padding: 0 3rem;
+			padding: 3.6rem 3rem;
 
 			p {
 				font-size: 1.8rem;
