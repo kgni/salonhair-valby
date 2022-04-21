@@ -1,751 +1,752 @@
 html {
-  overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 body {
-  font-family: "Source Serif Pro", serif;
+	font-family: 'Source Serif Pro', serif;
 }
 
 h1,
 h3 {
-  color: #fff;
-  font-weight: 600;
-  text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 h1 {
-  font-size: 3.2rem;
+	font-size: 3.2rem;
 }
 
 h2 {
-  font-size: 4.8rem;
-  text-transform: uppercase;
-  font-weight: 600;
+	font-size: 4.8rem;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 h3 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 p {
-  font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 
 a:link,
 a:visited {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: "Source Serif Pro", serif;
-  letter-spacing: 2px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+	font-family: 'Source Serif Pro', serif;
+	letter-spacing: 2px;
 }
 
 a:hover {
-  color: red;
+	color: red;
 }
 
 .container {
-  width: 70%;
-  margin: 0 auto;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .loader-container {
-  background-color: #000;
-  min-height: 100vh;
+	background-color: #000;
+	min-height: 100vh;
 }
 .loader-container .loader-text-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: absolute;
-  top: 30%;
-  width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 30%;
+	width: 100%;
 }
 
 .loader-container h1 {
-  color: #fff;
-  text-transform: lowercase;
-  font-weight: 900;
-  text-align: center;
-  font-size: 4.8rem;
-  line-height: 1.2;
-  margin-bottom: 2.4rem;
+	color: #fff;
+	text-transform: lowercase;
+	font-weight: 900;
+	text-align: center;
+	font-size: 4.8rem;
+	line-height: 1.2;
+	margin-bottom: 2.4rem;
 }
 .loader-container h1 span {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-transform: uppercase;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 
 .balls {
-  height: 8px;
+	height: 8px;
 }
 
 .balls > span {
-  display: inline-block;
-  background-color: #fff;
-  width: 0px;
-  height: 0px;
-  border-radius: 50%;
-  margin: 0 4px;
-  transform: translate3d(0);
-  -webkit-animation: bounce 0.6s infinite alternate;
-          animation: bounce 0.6s infinite alternate;
+	display: inline-block;
+	background-color: #fff;
+	width: 0px;
+	height: 0px;
+	border-radius: 50%;
+	margin: 0 4px;
+	transform: translate3d(0);
+	-webkit-animation: bounce 0.6s infinite alternate;
+	animation: bounce 0.6s infinite alternate;
 }
 
 .balls > span:nth-child(2) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 
 .balls > span:nth-child(3) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+	animation-delay: 0.4s;
 }
 
 @-webkit-keyframes bounce {
-  to {
-    width: 8px;
-    height: 8px;
-    transform: translate3d(0, -8px, 0);
-  }
+	to {
+		width: 8px;
+		height: 8px;
+		transform: translate3d(0, -8px, 0);
+	}
 }
 
 @keyframes bounce {
-  to {
-    width: 8px;
-    height: 8px;
-    transform: translate3d(0, -8px, 0);
-  }
+	to {
+		width: 8px;
+		height: 8px;
+		transform: translate3d(0, -8px, 0);
+	}
 }
 main {
-  opacity: 0;
-  display: none;
-  transition: opacity 1s ease-in;
-  overflow-x: hidden;
+	opacity: 0;
+	display: none;
+	transition: opacity 1s ease-in;
+	overflow-x: hidden;
 }
 
 .hero {
-  min-height: 100vh;
-  /* Fallback for browsers that do not support Custom Properties */
-  background-color: black;
-  background-image: url("../img/hero04-flipped-compressed.jpg");
-  background-size: 1400px;
-  background-position: -30rem -10rem;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-  padding-bottom: 9.6rem;
+	min-height: 100vh;
+	/* Fallback for browsers that do not support Custom Properties */
+	background-color: black;
+	background-image: url('../img/hero04-flipped-compressed.jpg');
+	background-size: 1400px;
+	background-position: -30rem -10rem;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	padding-bottom: 9.6rem;
 }
 .hero .overlay {
-  display: none;
+	display: none;
 }
 .hero .main-nav {
-  display: flex;
-  justify-content: flex-end;
-  padding: 4.8rem 0;
-  align-items: center;
-  margin-bottom: 4.8rem;
+	display: flex;
+	justify-content: flex-end;
+	padding: 4.8rem 0;
+	align-items: center;
+	margin-bottom: 4.8rem;
 }
 .hero .main-nav ul {
-  display: flex;
-  gap: 3.2rem;
-  font-size: 2.4rem;
-  letter-spacing: 1px;
+	display: flex;
+	gap: 3.2rem;
+	font-size: 2.4rem;
+	letter-spacing: 1px;
 }
 .hero .opening-hours-section {
-  display: block;
-  display: flex;
-  justify-content: flex-end;
+	display: block;
+	display: flex;
+	justify-content: flex-end;
 }
 .hero .opening-hours-card {
-  padding: 3.2rem 4.8rem;
-  border: 2px solid #fff;
-  display: inline-block;
-  background-color: #000;
+	padding: 3.2rem 4.8rem;
+	border: 2px solid #fff;
+	display: inline-block;
+	background-color: #000;
 }
 .hero .opening-hours-card .logo {
-  color: #fff;
-  text-transform: lowercase;
-  font-weight: 900;
-  text-align: center;
-  font-size: 4.8rem;
-  line-height: 1.2;
+	color: #fff;
+	text-transform: lowercase;
+	font-weight: 900;
+	text-align: center;
+	font-size: 4.8rem;
+	line-height: 1.2;
 }
 .hero .opening-hours-card .logo span {
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-transform: uppercase;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 600;
+	text-transform: uppercase;
 }
 .hero .opening-hours-card h1 {
-  text-align: center;
-  letter-spacing: 3px;
+	text-align: center;
+	letter-spacing: 3px;
 }
 .hero .opening-hours-card .opening-hours-card-title {
-  margin-bottom: 4.2rem;
+	margin-bottom: 4.2rem;
 }
 .hero .opening-hours-card .opening-hours {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-bottom: 4.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-bottom: 4.2rem;
 }
 .hero .opening-hours-card .opening-hours .opening-hour {
-  display: flex;
-  gap: 4rem;
-  align-items: center;
+	display: flex;
+	gap: 4rem;
+	align-items: center;
 }
 .hero .opening-hours-card .opening-hours .opening-hour .opening-day {
-  min-width: 100px;
+	min-width: 100px;
 }
 .hero .opening-hours-card .opening-hours .opening-hour h3 {
-  letter-spacing: 1px;
+	letter-spacing: 1px;
 }
 .hero .opening-hours-card .opening-hours .opening-hour h3:last-child {
-  flex: 1;
-  text-align: right;
+	flex: 1;
+	text-align: right;
 }
 .hero .opening-hours-card .opening-hours .closed h3 {
-  color: #616161;
+	color: #616161;
 }
 .hero .opening-hours-card .opening-hours .closed .line {
-  background-color: #616161;
+	background-color: #616161;
 }
 .hero .opening-hours-card .opening-hours .line {
-  width: 6.2rem;
-  height: 2px;
-  background-color: #fff;
+	width: 6.2rem;
+	height: 2px;
+	background-color: #fff;
 }
 .hero .opening-hours-card .phone-number {
-  text-align: center;
-  margin-bottom: 4.2rem;
+	text-align: center;
+	margin-bottom: 4.2rem;
 }
 .hero .opening-hours-card .phone-number h3 {
-  font-size: 2.4rem;
-  font-weight: 600;
+	font-size: 2.4rem;
+	font-weight: 600;
 }
 .hero .opening-hours-card .address {
-  text-align: center;
-  display: block;
-  font-size: 1.4rem;
-  font-weight: 600;
+	text-align: center;
+	display: block;
+	font-size: 1.4rem;
+	font-weight: 600;
 }
 
 .om-section {
-  min-height: 100vh;
-  /* Fallback for browsers that do not support Custom Properties */
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
+	min-height: 100vh;
+	/* Fallback for browsers that do not support Custom Properties */
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
 }
 .om-section h2 {
-  font-weight: 900;
-  font-size: 4.8rem;
+	font-weight: 900;
+	font-size: 4.8rem;
 }
 .om-section .om-text-container {
-  padding: 0 11.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 2.4rem;
+	padding: 0 11.2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2.4rem;
 }
 .om-section .om-text-container p {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 .om-section .om-img-container {
-  background-color: #8c0d0d;
-  height: 100%;
-  background-image: url("../img/about.png");
-  background-size: 85%;
-  background-position-x: right;
-  background-position-y: 120%;
-  background-repeat: no-repeat;
+	background-color: #8c0d0d;
+	height: 100%;
+	background-image: url('../img/about.png');
+	background-size: 85%;
+	background-position-x: right;
+	background-position-y: 120%;
+	background-repeat: no-repeat;
 }
 
 .prices-section {
-  position: relative;
-  background-color: #f3f3f3;
-  padding: 9.6rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-left: 50px;
+	position: relative;
+	background-color: #f3f3f3;
+	padding: 9.6rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding-left: 50px;
 }
 .prices-section .left-rectangle {
-  background-color: #000;
-  width: 50px;
-  min-height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-  z-index: 1;
+	background-color: #000;
+	width: 50px;
+	min-height: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	z-index: 1;
 }
 .prices-section h2 {
-  text-align: center;
-  font-weight: 900;
-  margin-bottom: 0.6rem;
-  font-size: 6.8rem;
-  letter-spacing: 5px;
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 0.6rem;
+	font-size: 6.8rem;
+	letter-spacing: 5px;
 }
 .prices-section p {
-  text-align: center;
-  margin-bottom: 4.8rem;
-  font-style: italic;
-  letter-spacing: 1px;
+	text-align: center;
+	margin-bottom: 4.8rem;
+	font-style: italic;
+	letter-spacing: 1px;
 }
 .prices-section .prices-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 12rem;
-       column-gap: 12rem;
-  margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	-moz-column-gap: 12rem;
+	column-gap: 12rem;
+	margin: 0 auto;
 }
 .prices-section .prices-right-container .prices-category:last-child {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 .prices-section .prices-category {
-  margin-bottom: 3.6rem;
+	margin-bottom: 3.6rem;
 }
 .prices-section .prices-category h3 {
-  font-size: 3.6rem;
-  color: #fff;
-  background: #000;
-  margin-bottom: 1.6rem;
-  font-weight: 600;
-  padding: 0 1.2rem;
-  letter-spacing: 2px;
+	font-size: 3.6rem;
+	color: #fff;
+	background: #000;
+	margin-bottom: 1.6rem;
+	font-weight: 600;
+	padding: 0 1.2rem;
+	letter-spacing: 2px;
 }
 .prices-section .prices-category h5 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  font-weight: 900;
-  letter-spacing: 1px;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 1px;
 }
 .prices-section .prices-subcategory {
-  margin-bottom: 2.8rem;
+	margin-bottom: 2.8rem;
 }
 .prices-section .prices-subcategory h4 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  margin-bottom: 1.2rem;
-  font-weight: 600;
-  text-decoration: underline;
-  font-weight: 900;
-  letter-spacing: 1px;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+	font-weight: 600;
+	text-decoration: underline;
+	font-weight: 900;
+	letter-spacing: 1px;
 }
 .prices-section .prices-items {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
-  width: 450px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+	width: 450px;
 }
 .prices-section .price-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  letter-spacing: 1px;
-  gap: 0.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	letter-spacing: 1px;
+	gap: 0.6rem;
 }
 .prices-section .price-item .dot {
-  flex: 1;
-  align-self: center;
-  border-bottom: 1px dotted black;
-  margin-top: 0.8rem;
+	flex: 1;
+	align-self: center;
+	border-bottom: 1px dotted black;
+	margin-top: 0.8rem;
 }
 .prices-section .price-name {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 .prices-section .price-cost {
-  font-size: 1.4rem;
-  text-transform: uppercase;
+	font-size: 1.4rem;
+	text-transform: uppercase;
 }
 .prices-section .hair-length,
 .prices-section .treatment-type {
-  display: flex;
-  flex-direction: column;
-  gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
 }
 .prices-section .hair-length .price-item:last-child,
 .prices-section .treatment-type .price-item:last-child {
-  margin-bottom: 1.2rem;
+	margin-bottom: 1.2rem;
 }
 .prices-section .hair-length .price-name,
 .prices-section .hair-length .price-cost,
 .prices-section .treatment-type .price-name,
 .prices-section .treatment-type .price-cost {
-  font-weight: 400;
+	font-weight: 400;
 }
 .prices-section .prices-right-container .price-name {
-  font-weight: 400;
+	font-weight: 400;
 }
 .prices-section .with-hat {
-  margin-top: 1.2rem;
+	margin-top: 1.2rem;
 }
 
 .find-os-section {
-  padding: 9.6rem 0;
+	padding: 9.6rem 0;
 }
 .find-os-section h2 {
-  text-align: center;
+	text-align: center;
 }
 .find-os-section p {
-  text-align: center;
-  margin-bottom: 6.8rem;
+	text-align: center;
+	margin-bottom: 6.8rem;
 }
 .find-os-section .map-container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 .find-os-section .map-container iframe {
-  width: 80%;
-  height: 700px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	width: 80%;
+	height: 700px;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .main-footer {
-  padding: 3.2rem 0;
-  background-color: #000;
+	padding: 3.2rem 0;
+	background-color: #000;
 }
 .main-footer .main-footer-content {
-  width: 90%;
-  margin: 0 auto;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
 }
 .main-footer .main-footer-content ul {
-  display: flex;
-  gap: 4.2rem;
-  letter-spacing: 1px;
-  align-items: center;
+	display: flex;
+	gap: 4.2rem;
+	letter-spacing: 1px;
+	align-items: center;
 }
 .main-footer .main-footer-content ul .company-name {
-  font-weight: 900;
-  font-size: 1.8rem;
+	font-weight: 900;
+	font-size: 1.8rem;
 }
 .main-footer .created-by a:link {
-  margin-left: 4px;
-  font-size: 1.8rem;
+	margin-left: 4px;
+	font-size: 1.8rem;
 }
 
 @media (max-width: 1650px) {
-  .hero {
-    background-image: url("../img/hero04-flipped-compressed.jpg");
-    background-position: -40rem -10rem;
-  }
+	.hero {
+		background-image: url('../img/hero04-flipped-compressed.jpg');
+		background-position: -40rem -10rem;
+	}
 }
 @media (max-width: 1470px) {
-  .hero {
-    background-image: url("../img/hero04-flipped-compressed.jpg");
-    background-position: -50rem -10rem;
-  }
+	.hero {
+		background-image: url('../img/hero04-flipped-compressed.jpg');
+		background-position: -50rem -10rem;
+	}
 }
 @media (max-width: 1370px) {
-  .hero {
-    background-image: url("../img/hero04-flipped-compressed.jpg");
-    background-position: -60rem -10rem;
-  }
+	.hero {
+		background-image: url('../img/hero04-flipped-compressed.jpg');
+		background-position: -60rem -10rem;
+	}
 
-  .prices-section,
-.find-os-section {
-    padding: 3.6rem 0;
-  }
+	.prices-section,
+	.find-os-section {
+		padding: 3.6rem 0;
+	}
 }
 @media (max-width: 1230px) {
-  .hero {
-    background-image: url("../img/hero04-flipped-compressed.jpg");
-    background-position: -70rem -10rem;
-  }
+	.hero {
+		background-image: url('../img/hero04-flipped-compressed.jpg');
+		background-position: -70rem -10rem;
+	}
 }
 @media (max-width: 1170px) {
-  .prices-section .prices-container {
-    grid-template-columns: 1fr;
-  }
+	.prices-section .prices-container {
+		grid-template-columns: 1fr;
+	}
 
-  .find-os-section p {
-    margin-bottom: 4.8rem;
-  }
-  .find-os-section .map-container iframe {
-    width: 90%;
-    height: 400px;
-  }
+	.find-os-section p {
+		margin-bottom: 4.8rem;
+	}
+	.find-os-section .map-container iframe {
+		width: 90%;
+		height: 400px;
+	}
 }
 @media (max-width: 1136px) {
-  .om-section {
-    grid-template-columns: 1fr;
-    min-height: unset;
-  }
-  .om-section .om-text-container {
-    padding-top: 7.2rem;
-    padding-bottom: 7.2rem;
-  }
-  .om-section .om-img-container {
-    background-image: unset;
-    padding: 7.2rem 0;
-  }
+	.om-section {
+		grid-template-columns: 1fr;
+		min-height: unset;
+	}
+	.om-section .om-text-container {
+		padding-top: 7.2rem;
+		padding-bottom: 7.2rem;
+	}
+	.om-section .om-img-container {
+		background-image: unset;
+		padding: 7.2rem 0;
+	}
 }
 @media (max-width: 1130px) {
-  .container {
-    width: 100%;
-  }
+	.container {
+		width: 100%;
+	}
 
-  .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/hero04-flipped-compressed.jpg");
-    position: relative;
-    background-repeat: unset;
-    padding-bottom: 4.8rem;
-  }
-  .hero .overlay {
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.699);
-    position: absolute;
-    z-index: -1;
-  }
-  .hero .main-nav {
-    justify-content: center;
-    margin-bottom: 0;
-  }
-  .hero .opening-hours-section {
-    justify-content: center;
-  }
+	.hero {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+			url('../img/hero04-flipped-compressed.jpg');
+		position: relative;
+		background-repeat: unset;
+		padding-bottom: 4.8rem;
+	}
+	.hero .overlay {
+		display: block;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.699);
+		position: absolute;
+		z-index: -1;
+	}
+	.hero .main-nav {
+		justify-content: center;
+		margin-bottom: 0;
+	}
+	.hero .opening-hours-section {
+		justify-content: center;
+	}
 }
 @media (max-width: 880px) {
-  .main-footer .main-footer-content ul {
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 0.8rem;
-    -moz-column-gap: 2.4rem;
-         column-gap: 2.4rem;
-  }
-  .main-footer .main-footer-content ul .footer-tlf {
-    grid-row-start: 1;
-    grid-column-start: 2;
-  }
-  .main-footer .created-by {
-    align-self: flex-end;
-  }
+	.main-footer .main-footer-content ul {
+		display: grid;
+		grid-template-columns: auto auto;
+		row-gap: 0.8rem;
+		-moz-column-gap: 2.4rem;
+		column-gap: 2.4rem;
+	}
+	.main-footer .main-footer-content ul .footer-tlf {
+		grid-row-start: 1;
+		grid-column-start: 2;
+	}
+	.main-footer .created-by {
+		align-self: flex-end;
+	}
 
-  .find-os-section .map-container {
-    margin-bottom: 0;
-  }
+	.find-os-section .map-container {
+		margin-bottom: 0;
+	}
 }
 @media (max-width: 600px) {
-  .om-section .om-text-container {
-    padding: 3.6rem 6rem;
-  }
+	.om-section .om-text-container {
+		padding: 3.6rem 6rem;
+	}
 
-  .prices-section {
-    padding-left: 25px;
-  }
-  .prices-section .price-item {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .prices-section .price-item .dot {
-    display: none;
-  }
-  .prices-section .price-name {
-    display: flex;
-  }
-  .prices-section .price-name::after {
-    display: inline-flex;
-    flex-grow: 1;
-    content: "";
-    border-bottom: 1px solid black;
-  }
-  .prices-section .price-cost {
-    align-self: end;
-  }
-  .prices-section .left-rectangle {
-    width: 25px;
-  }
-  .prices-section .prices-items {
-    width: 400px;
-  }
+	.prices-section {
+		padding-left: 25px;
+	}
+	.prices-section .price-item {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+	.prices-section .price-item .dot {
+		display: none;
+	}
+	.prices-section .price-name {
+		display: flex;
+	}
+	.prices-section .price-name::after {
+		display: inline-flex;
+		flex-grow: 1;
+		content: '';
+		border-bottom: 1px solid black;
+	}
+	.prices-section .price-cost {
+		align-self: end;
+	}
+	.prices-section .left-rectangle {
+		width: 25px;
+	}
+	.prices-section .prices-items {
+		width: 400px;
+	}
 }
 @media (max-width: 540px) {
-  .main-footer .main-footer-content {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4.8rem;
-  }
-  .main-footer .main-footer-content ul {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 0.8rem;
-    justify-items: center;
-    -moz-column-gap: 2.4rem;
-         column-gap: 2.4rem;
-  }
-  .main-footer .main-footer-content ul .company-name {
-    grid-column: 1/-1;
-    color: blue;
-    font-size: 2.4rem;
-  }
-  .main-footer .main-footer-content ul .footer-tlf {
-    grid-row-start: unset;
-    grid-column-start: unset;
-  }
-  .main-footer .main-footer-content ul .cvr {
-    grid-row-start: 4;
-  }
-  .main-footer .created-by {
-    align-self: center;
-  }
+	.main-footer .main-footer-content {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 4.8rem;
+	}
+	.main-footer .main-footer-content ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		row-gap: 0.8rem;
+		justify-items: center;
+		-moz-column-gap: 2.4rem;
+		column-gap: 2.4rem;
+	}
+	.main-footer .main-footer-content ul .company-name {
+		grid-column: 1/-1;
+		color: blue;
+		font-size: 2.4rem;
+	}
+	.main-footer .main-footer-content ul .footer-tlf {
+		grid-row-start: unset;
+		grid-column-start: unset;
+	}
+	.main-footer .main-footer-content ul .cvr {
+		grid-row-start: 4;
+	}
+	.main-footer .created-by {
+		align-self: center;
+	}
 
-  .om-section {
-    min-height: 85vh;
-  }
+	.om-section {
+		min-height: 85vh;
+	}
 
-  .find-os-section h2 {
-    font-size: 3.6rem;
-  }
+	.find-os-section h2 {
+		font-size: 3.6rem;
+	}
 }
 @media (max-width: 510px) {
-  .hero .opening-hours-card .opening-hours .line {
-    width: 3.2rem;
-  }
+	.hero .opening-hours-card .opening-hours .line {
+		width: 3.2rem;
+	}
 }
 @media (max-width: 480px) {
-  .hero .main-nav {
-    padding: 3.2rem 0 0 1.2rem;
-  }
-  .hero .opening-hours-card {
-    padding: 2.4rem;
-    transform: scale(0.9);
-  }
-  .hero .opening-hours-card .opening-hours .line {
-    width: 3.2rem;
-  }
+	.hero .main-nav {
+		padding: 3.2rem 0 0 1.2rem;
+	}
+	.hero .opening-hours-card {
+		padding: 2.4rem;
+		transform: scale(0.9);
+	}
+	.hero .opening-hours-card .opening-hours .line {
+		width: 3.2rem;
+	}
 
-  .prices-section {
-    padding: 3.6rem 0.4rem;
-  }
-  .prices-section h2 {
-    font-size: 4.8rem;
-    margin-bottom: 0;
-  }
-  .prices-section .left-rectangle {
-    display: none;
-  }
-  .prices-section .prices-category h3 {
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    font-size: 2.4rem;
-    padding: 0.6rem;
-    text-align: center;
-    font-weight: 600;
-  }
-  .prices-section .prices-category h4 {
-    font-size: 1.4rem;
-  }
+	.prices-section {
+		padding: 3.6rem 0.4rem;
+	}
+	.prices-section h2 {
+		font-size: 4.8rem;
+		margin-bottom: 0;
+	}
+	.prices-section .left-rectangle {
+		display: none;
+	}
+	.prices-section .prices-category h3 {
+		width: 100%;
+		background-color: #000;
+		color: #fff;
+		font-size: 2.4rem;
+		padding: 0.6rem;
+		text-align: center;
+		font-weight: 600;
+	}
+	.prices-section .prices-category h4 {
+		font-size: 1.4rem;
+	}
 
-  .om-section {
-    min-height: 85vh;
-  }
-  .om-section .om-text-container {
-    gap: 1.6rem;
-  }
-  .om-section .om-text-container p {
-    font-size: 1.6rem;
-  }
-  .om-section h2 {
-    font-size: 3.2rem;
-  }
+	.om-section {
+		min-height: 85vh;
+	}
+	.om-section .om-text-container {
+		gap: 1.6rem;
+	}
+	.om-section .om-text-container p {
+		font-size: 1.6rem;
+	}
+	.om-section h2 {
+		font-size: 3.2rem;
+	}
 }
 @media (max-width: 432px) {
-  .prices-section {
-    padding: 3.6rem 0;
-  }
-  .prices-section h2 {
-    padding: unset;
-  }
-  .prices-section .prices-container {
-    padding: 0 1.2rem;
-  }
-  .prices-section .prices-items {
-    width: unset;
-  }
+	.prices-section {
+		padding: 3.6rem 0;
+	}
+	.prices-section h2 {
+		padding: unset;
+	}
+	.prices-section .prices-container {
+		padding: 0 1.2rem;
+	}
+	.prices-section .prices-items {
+		width: unset;
+	}
 }
 @media (max-width: 402px) {
-  h3 {
-    font-size: 2rem;
-  }
+	h3 {
+		font-size: 2rem;
+	}
 
-  .hero .main-nav {
-    padding: 3.2rem 0 0 1.2rem;
-  }
-  .hero .opening-hours-card {
-    padding: 2.4rem;
-    transform: scale(0.9);
-  }
-  .hero .opening-hours-card .opening-hours .line {
-    width: 3.2rem;
-  }
+	.hero .main-nav {
+		padding: 3.2rem 0 0 1.2rem;
+	}
+	.hero .opening-hours-card {
+		padding: 2.4rem;
+		transform: scale(0.9);
+	}
+	.hero .opening-hours-card .opening-hours .line {
+		width: 3.2rem;
+	}
 
-  .om-section {
-    min-height: 85vh;
-  }
-  .om-section .om-text-container {
-    padding: 3.6rem 3rem;
-  }
+	.om-section {
+		min-height: 85vh;
+	}
+	.om-section .om-text-container {
+		padding: 3.6rem 3rem;
+	}
 
-  .find-os-section h2 {
-    font-size: 2.8rem;
-  }
-  .find-os-section p {
-    font-size: 1.6rem;
-  }
+	.find-os-section h2 {
+		font-size: 2.8rem;
+	}
+	.find-os-section p {
+		font-size: 1.6rem;
+	}
 }
 @media (max-width: 387px) {
-  .hero .main-nav ul {
-    gap: 2.4rem;
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-  .hero .opening-hours-card .opening-hours .opening-hour h3 {
-    font-size: 1.4rem;
-  }
-  .hero .opening-hours-card .opening-hours .opening-hour .opening-day {
-    min-width: 69px;
-  }
+	.hero .main-nav ul {
+		gap: 2.4rem;
+		font-size: 2rem;
+		letter-spacing: 1px;
+	}
+	.hero .opening-hours-card .opening-hours .opening-hour h3 {
+		font-size: 1.4rem;
+	}
+	.hero .opening-hours-card .opening-hours .opening-hour .opening-day {
+		min-width: 69px;
+	}
 
-  .find-os-section p {
-    padding: 0 1.2rem;
-  }
+	.find-os-section p {
+		padding: 0 1.2rem;
+	}
 }
 @media (max-width: 342px) {
-  h2 {
-    font-size: 3.6rem;
-  }
+	h2 {
+		font-size: 3.6rem;
+	}
 
-  .om-section .om-text-container {
-    padding: 3.6rem 3rem;
-  }
-  .om-section .om-text-container p {
-    font-size: 1.8rem;
-  }
+	.om-section .om-text-container {
+		padding: 3.6rem 3rem;
+	}
+	.om-section .om-text-container p {
+		font-size: 1.8rem;
+	}
 }
 @media (max-width: 323px) {
-  .hero .opening-hours-card .opening-hours .opening-hour {
-    gap: 3.4rem;
-  }
-  .hero .opening-hours-card .opening-hours .opening-hour h3 {
-    font-size: 1.4rem;
-  }
-  .hero .opening-hours-card .opening-hours .opening-hour .opening-day {
-    min-width: 69px;
-  }
-}/*# sourceMappingURL=style.css.map */
+	.hero .opening-hours-card .opening-hours .opening-hour {
+		gap: 3.4rem;
+	}
+	.hero .opening-hours-card .opening-hours .opening-hour h3 {
+		font-size: 1.4rem;
+	}
+	.hero .opening-hours-card .opening-hours .opening-hour .opening-day {
+		min-width: 69px;
+	}
+} /*# sourceMappingURL=style.css.map */
