@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/kgni/salonhair-valby/issues"
   },
-  "homepage": "https://github.com/kgni/salonhair-valby#readme"
+  "homepage": "https://github.com/kgni/salonhair-valby#readme",
+  "devDependencies": {
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
 }
