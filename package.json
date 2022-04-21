@@ -1,24 +1,27 @@
 {
-  "name": "salonhair-valby",
-  "version": "1.0.0",
-  "description": "Client project for a hairdresser",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kgni/salonhair-valby.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kgni/salonhair-valby/issues"
-  },
-  "homepage": "https://github.com/kgni/salonhair-valby#readme",
-  "devDependencies": {
-    "postcss": "^8.4.12",
-    "postcss-cli": "^9.1.0"
-  }
+	"name": "salonhair-valby",
+	"version": "1.0.0",
+	"description": "Client project for a hairdresser",
+	"main": "index.js",
+	"scripts": {
+		"postcss:watch": "postcss css/style.css --dir public --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kgni/salonhair-valby.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kgni/salonhair-valby/issues"
+	},
+	"homepage": "https://github.com/kgni/salonhair-valby#readme",
+	"devDependencies": {
+		"cssnano": "^5.1.7",
+		"postcss": "^8.4.12",
+		"postcss-cli": "^9.1.0",
+		"postcss-preset-env": "^7.4.3"
+	},
+	"dependencies": {}
 }
