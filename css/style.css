@@ -152,9 +152,11 @@ main {
 }
 .hero .main-nav ul {
   display: flex;
-  gap: 3.2rem;
   font-size: 2.4rem;
   letter-spacing: 1px;
+}
+.hero .main-nav ul li:not(:last-child) {
+  margin-right: 3.2rem;
 }
 .hero .opening-hours-section {
   display: block;
@@ -191,16 +193,18 @@ main {
 .hero .opening-hours-card .opening-hours {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   margin-bottom: 4.2rem;
 }
 .hero .opening-hours-card .opening-hours .opening-hour {
   display: flex;
-  gap: 4rem;
   align-items: center;
+}
+.hero .opening-hours-card .opening-hours .opening-hour:not(:last-child) {
+  margin-bottom: 2rem;
 }
 .hero .opening-hours-card .opening-hours .opening-hour .opening-day {
   min-width: 100px;
+  margin-right: 4rem;
 }
 .hero .opening-hours-card .opening-hours .opening-hour h3 {
   letter-spacing: 1px;
@@ -219,6 +223,7 @@ main {
   width: 6.2rem;
   height: 2px;
   background-color: #fff;
+  margin-right: 4rem;
 }
 .hero .opening-hours-card .phone-number {
   text-align: center;
@@ -245,15 +250,18 @@ main {
 .om-section h2 {
   font-weight: 900;
   font-size: 4.8rem;
+  margin-bottom: 2.4rem;
 }
 .om-section .om-text-container {
   padding: 0 11.2rem;
   display: flex;
   flex-direction: column;
-  gap: 2.4rem;
 }
 .om-section .om-text-container p {
   font-size: 2rem;
+}
+.om-section .om-text-container p:not(:last-child) {
+  margin-bottom: 2rem;
 }
 .om-section .om-img-container {
   background-color: #8c0d0d;
@@ -325,13 +333,22 @@ main {
   font-weight: 900;
   letter-spacing: 1px;
 }
+.prices-section .prices-category h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  text-decoration: underline;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
 .prices-section .prices-subcategory {
   margin-bottom: 2.8rem;
 }
 .prices-section .prices-subcategory h4 {
   font-size: 1.8rem;
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.6rem;
   font-weight: 600;
   text-decoration: underline;
   font-weight: 900;
@@ -340,20 +357,25 @@ main {
 .prices-section .prices-items {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
   width: 450px;
+}
+.prices-section .prices-items .extra-fee {
+  letter-spacing: 1px;
 }
 .prices-section .price-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   letter-spacing: 1px;
-  gap: 0.6rem;
+}
+.prices-section .price-item:not(:last-child) {
+  margin-bottom: 0.8rem;
 }
 .prices-section .price-item .dot {
   flex: 1;
   align-self: center;
   border-bottom: 1px dotted black;
+  margin: 0 0.6rem 0 0.6rem;
   margin-top: 0.8rem;
 }
 .prices-section .price-name {
@@ -369,7 +391,6 @@ main {
 .prices-section .treatment-type {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
 }
 .prices-section .hair-length .price-item:last-child,
 .prices-section .treatment-type .price-item:last-child {
@@ -423,9 +444,11 @@ main {
 }
 .main-footer .main-footer-content ul {
   display: flex;
-  gap: 4.2rem;
   letter-spacing: 1px;
   align-items: center;
+}
+.main-footer .main-footer-content ul li:not(:last-child) {
+  margin-right: 3.2rem;
 }
 .main-footer .main-footer-content ul .company-name {
   font-weight: 900;
@@ -519,13 +542,16 @@ main {
     justify-content: center;
   }
 }
-@media (max-width: 880px) {
+@media (max-width: 925px) {
   .main-footer .main-footer-content ul {
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 0.8rem;
     -moz-column-gap: 2.4rem;
          column-gap: 2.4rem;
+  }
+  .main-footer .main-footer-content ul li:not(:last-child) {
+    margin-right: 0;
   }
   .main-footer .main-footer-content ul .footer-tlf {
     grid-row-start: 1;
@@ -573,18 +599,18 @@ main {
     width: 400px;
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 600px) {
   .main-footer .main-footer-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4.8rem;
   }
   .main-footer .main-footer-content ul {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 0.8rem;
     justify-items: center;
+    margin-bottom: 4.8rem;
     -moz-column-gap: 2.4rem;
          column-gap: 2.4rem;
   }
@@ -655,14 +681,15 @@ main {
   .om-section {
     min-height: 85vh;
   }
-  .om-section .om-text-container {
-    gap: 1.6rem;
-  }
   .om-section .om-text-container p {
     font-size: 1.6rem;
   }
+  .om-section .om-text-container p:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
   .om-section h2 {
     font-size: 3.2rem;
+    margin-bottom: 1.6rem;
   }
 }
 @media (max-width: 432px) {
@@ -711,9 +738,11 @@ main {
 }
 @media (max-width: 387px) {
   .hero .main-nav ul {
-    gap: 2.4rem;
     font-size: 2rem;
     letter-spacing: 1px;
+  }
+  .hero .main-nav ul li:not(:last-child) {
+    margin-right: 2.4rem;
   }
   .hero .opening-hours-card .opening-hours .opening-hour h3 {
     font-size: 1.4rem;
@@ -739,13 +768,20 @@ main {
   }
 }
 @media (max-width: 323px) {
-  .hero .opening-hours-card .opening-hours .opening-hour {
-    gap: 3.4rem;
-  }
   .hero .opening-hours-card .opening-hours .opening-hour h3 {
     font-size: 1.4rem;
   }
   .hero .opening-hours-card .opening-hours .opening-hour .opening-day {
     min-width: 69px;
+    margin-right: 3.2rem;
+  }
+}
+@media (max-width: 315px) {
+  .hero .opening-hours-card .opening-hours .opening-hour h3 {
+    font-size: 1.4rem;
+  }
+  .hero .opening-hours-card .opening-hours .opening-hour .opening-day {
+    min-width: 69px;
+    margin-right: 1.8rem;
   }
 }/*# sourceMappingURL=style.css.map */
