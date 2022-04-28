@@ -288,7 +288,7 @@ main {
 // ABOUT SECTION
 
 .om-section {
-	min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+	// min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 	// height: calc(var(--vh, 1vh) * 100);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -301,7 +301,7 @@ main {
 		margin-bottom: 2.4rem;
 	}
 	.om-text-container {
-		padding: 0 11.2rem;
+		padding: 9.6rem 11.2rem;
 		display: flex;
 		flex-direction: column;
 		// gap: 2.4rem;
@@ -316,18 +316,119 @@ main {
 	}
 
 	.om-img-container {
-		background-color: #8c0d0d;
-		height: 100%;
-		background-image: url('../img/about.png');
-		background-size: 85%;
-		background-position-x: right;
-		background-position-y: 120%;
-		background-repeat: no-repeat;
-
-		// background-attachment: fixed;
+		position: relative;
 	}
 }
 
+// IMAGE SLIDER OM SECTION
+
+.slider {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
+}
+
+.slides {
+	height: 100%;
+	width: 100%;
+	display: flex;
+
+	// Hiding the input, because we are going to be using labels with a for attribute to select the individual radio buttons.
+	input {
+		display: none;
+	}
+}
+
+.slide {
+	transition: 2s;
+	height: 100%;
+	width: 100%;
+	flex-shrink: 0;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+// Manual slide navigation
+
+.navigation-manual {
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn {
+	border: 2px solid #fff;
+	padding: 3px;
+	border-radius: 50%;
+	cursor: pointer;
+	transform: 1s;
+	transition: 200ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	&:not(:last-child) {
+		margin-right: 1.4rem;
+	}
+}
+
+.slide-active,
+.manual-btn:hover {
+	transform: scale(1.2);
+	background-color: #fff;
+}
+
+// This is going to move the first slider image to the left - amount depends on whic radiobutton is checked.
+
+#radio1:checked ~ .first {
+	margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+	margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+	margin-left: -200%;
+}
+
+// Automatic navifation
+
+.navigation-auto {
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+
+	div {
+		border: 2px solid #fff;
+		padding: 3px;
+		border-radius: 50%;
+		cursor: pointer;
+		transform: 1s;
+		transition: 200ms;
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		&:not(:last-child) {
+			margin-right: 1.4rem;
+		}
+	}
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+	background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+	background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+	background-color: #fff;
+}
 // PRICES SECTION
 
 .prices-section {
@@ -623,7 +724,7 @@ main {
 @media (max-width: 1136px) {
 	.om-section {
 		grid-template-columns: 1fr;
-		min-height: unset;
+		height: 100vh;
 
 		.om-text-container {
 			padding-top: 7.2rem;
@@ -634,6 +735,11 @@ main {
 			background-image: unset;
 			padding: 7.2rem 0;
 		}
+	}
+
+	.navigation-manual,
+	.navigation-auto {
+		display: none;
 	}
 }
 
@@ -856,7 +962,7 @@ main {
 		min-height: 85vh;
 
 		.om-text-container {
-			// gap: 1.6rem;
+			padding: 3.6rem 3rem;
 
 			p {
 				&:not(:last-child) {
