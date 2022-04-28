@@ -301,7 +301,7 @@ main {
 		margin-bottom: 2.4rem;
 	}
 	.om-text-container {
-		padding: 0 11.2rem;
+		padding: 9.6rem 11.2rem;
 		display: flex;
 		flex-direction: column;
 		// gap: 2.4rem;
@@ -314,13 +314,85 @@ main {
 			}
 		}
 	}
+
+	.om-img-container {
+		position: relative;
+	}
 }
 
 // IMAGE SLIDER OM SECTION
 
 .slider {
+	overflow: hidden;
+	height: 100%;
+	position: relative;
 }
 
+.slides {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	input {
+		display: none;
+	}
+}
+
+.slide {
+	transition: 2s;
+	height: 100%;
+	width: 100%;
+	flex-shrink: 0;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+// Manual slide navigation
+
+.navigation-manual {
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn {
+	border: 2px solid #fff;
+	padding: 3px;
+	border-radius: 50%;
+	cursor: pointer;
+	transform: 1s;
+	transition: 200ms;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	&:not(:last-child) {
+		margin-right: 1.4rem;
+	}
+}
+
+.slide-active {
+	transform: scale(1.2);
+	background-color: #fff;
+}
+
+.manual-btn:hover {
+	transform: scale(1.2);
+}
+
+#radio1:checked ~ .first {
+	margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+	margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+	margin-left: -200%;
+}
 // PRICES SECTION
 
 .prices-section {
@@ -616,7 +688,7 @@ main {
 @media (max-width: 1136px) {
 	.om-section {
 		grid-template-columns: 1fr;
-		min-height: unset;
+		height: 100vh;
 
 		.om-text-container {
 			padding-top: 7.2rem;
@@ -627,6 +699,10 @@ main {
 			background-image: unset;
 			padding: 7.2rem 0;
 		}
+	}
+
+	.navigation-manual {
+		display: none;
 	}
 }
 
