@@ -18,20 +18,33 @@ const btn1 = document.querySelector('.manual-btn1');
 const btn2 = document.querySelector('.manual-btn2');
 const btn3 = document.querySelector('.manual-btn3');
 
+let counter = 1;
+
 btn1.addEventListener('click', () => {
-	btn1.classList.add('slide-active');
-	btn2.classList.remove('slide-active');
-	btn3.classList.remove('slide-active');
+	counter = 1;
 });
 
 btn2.addEventListener('click', () => {
-	btn2.classList.add('slide-active');
-	btn1.classList.remove('slide-active');
-	btn3.classList.remove('slide-active');
+	counter = 2;
 });
 
 btn3.addEventListener('click', () => {
-	btn3.classList.add('slide-active');
-	btn1.classList.remove('slide-active');
-	btn2.classList.remove('slide-active');
+	counter = 3;
 });
+
+setInterval(() => {
+	if (counter === 1) {
+		document.getElementById('radio' + counter).checked = true;
+		counter++;
+	} else if (counter === 2) {
+		document.getElementById('radio' + counter).checked = true;
+		counter++;
+	} else if (counter === 3) {
+		document.getElementById('radio' + counter).checked = true;
+		counter++;
+	}
+
+	if (counter > 3) {
+		counter = 1;
+	}
+}, 5000);

@@ -332,6 +332,8 @@ main {
 	height: 100%;
 	width: 100%;
 	display: flex;
+
+	// Hiding the input, because we are going to be using labels with a for attribute to select the individual radio buttons.
 	input {
 		display: none;
 	}
@@ -373,14 +375,13 @@ main {
 	}
 }
 
-.slide-active {
+.slide-active,
+.manual-btn:hover {
 	transform: scale(1.2);
 	background-color: #fff;
 }
 
-.manual-btn:hover {
-	transform: scale(1.2);
-}
+// This is going to move the first slider image to the left - amount depends on whic radiobutton is checked.
 
 #radio1:checked ~ .first {
 	margin-left: 0%;
@@ -392,6 +393,41 @@ main {
 
 #radio3:checked ~ .first {
 	margin-left: -200%;
+}
+
+// Automatic navifation
+
+.navigation-auto {
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	display: flex;
+	justify-content: center;
+
+	div {
+		border: 2px solid #fff;
+		padding: 3px;
+		border-radius: 50%;
+		cursor: pointer;
+		transform: 1s;
+		transition: 200ms;
+		box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+		&:not(:last-child) {
+			margin-right: 1.4rem;
+		}
+	}
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+	background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+	background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+	background-color: #fff;
 }
 // PRICES SECTION
 
@@ -701,7 +737,8 @@ main {
 		}
 	}
 
-	.navigation-manual {
+	.navigation-manual,
+	.navigation-auto {
 		display: none;
 	}
 }
@@ -925,7 +962,7 @@ main {
 		min-height: 85vh;
 
 		.om-text-container {
-			// gap: 1.6rem;
+			padding: 3.6rem 3rem;
 
 			p {
 				&:not(:last-child) {
