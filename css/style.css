@@ -367,7 +367,7 @@ main {
 .prices-section {
   position: relative;
   background-color: #f3f3f3;
-  padding: 9.6rem 0;
+  padding: 7.2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -501,7 +501,7 @@ main {
 }
 
 .find-os-section {
-  padding: 9.6rem 0;
+  padding: 7.2rem 0 4.8rem 0;
 }
 .find-os-section h2 {
   text-align: center;
