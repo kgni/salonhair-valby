@@ -288,7 +288,7 @@ main {
 // ABOUT SECTION
 
 .om-section {
-	min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+	// min-height: 100vh; /* Fallback for browsers that do not support Custom Properties */
 	// height: calc(var(--vh, 1vh) * 100);
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -314,18 +314,11 @@ main {
 			}
 		}
 	}
+}
 
-	.om-img-container {
-		background-color: #8c0d0d;
-		height: 100%;
-		background-image: url('../img/about.png');
-		background-size: 85%;
-		background-position-x: right;
-		background-position-y: 120%;
-		background-repeat: no-repeat;
+// IMAGE SLIDER OM SECTION
 
-		// background-attachment: fixed;
-	}
+.slider {
 }
 
 // PRICES SECTION

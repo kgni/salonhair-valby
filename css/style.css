@@ -241,8 +241,6 @@ main {
 }
 
 .om-section {
-  min-height: 100vh;
-  /* Fallback for browsers that do not support Custom Properties */
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -262,15 +260,6 @@ main {
 }
 .om-section .om-text-container p:not(:last-child) {
   margin-bottom: 2rem;
-}
-.om-section .om-img-container {
-  background-color: #8c0d0d;
-  height: 100%;
-  background-image: url("../img/about.png");
-  background-size: 85%;
-  background-position-x: right;
-  background-position-y: 120%;
-  background-repeat: no-repeat;
 }
 
 .prices-section {
