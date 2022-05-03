@@ -307,6 +307,7 @@ main {
 .om-section .om-text-container p a:link {
   color: black;
   font-family: "Source Serif Pro", serif;
+  font-weight: bold;
 }
 .om-section .om-text-container p span {
   font-weight: bold;
