@@ -1,31 +1,30 @@
 // TODO - CHECK WHITESPACE FROM START TO END (ON ALL DEVICES)
-// TODO - WHITESPACE BETWEEN PRICE CATEGORIES (ALL DEVICES)
 // TODO - REFACTOR CODE SO IT IS MORE OOP, IT IS REALLY MESSY ATM.
 
 // TODO - OTHER FONTS?
-// TODO - FAV ICON
 
 // TODO - CHANGE META-DATA URLS TO THE RIGHT URL (OF THE SITE)
 
 // General styles
+
+@font-face {
+	font-family: 'Lucida_Console';
+
+	src: url('../fonts/lucon-webfont.woff') format('woff');
+}
 
 html {
 	overflow-x: hidden;
 }
 body {
 	// font-family: 'Source Serif Pro', serif;
-	font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular',
-		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Lucida Console', 'Lucida Sans', 'Lucida Sans Regular',
-		'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+h2 {
+	font-family: 'Lucida_Console', 'Lucida Console', 'Lucida Sans',
+		'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+		Verdana, sans-serif;
 }
 
 h1,
@@ -64,6 +63,9 @@ a:visited {
 	cursor: pointer;
 	// font-family: 'Source Serif Pro', serif;
 	letter-spacing: 2px;
+	font-family: 'Lucida_Console', 'Lucida Console', 'Lucida Sans',
+		'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+		Verdana, sans-serif;
 }
 
 a:hover {
@@ -553,6 +555,9 @@ main {
 			font-weight: 600;
 			padding: 0 1.2rem;
 			letter-spacing: 2px;
+			font-family: 'Lucida_Console', 'Lucida Console', 'Lucida Sans',
+				'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+				Verdana, sans-serif;
 		}
 
 		h5 {
@@ -694,6 +699,9 @@ main {
 		font-size: 1.2rem;
 		display: flex;
 		justify-content: space-between;
+		font-family: 'Lucida_Console', 'Lucida Console', 'Lucida Sans',
+			'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+			Verdana, sans-serif;
 
 		ul {
 			display: flex;
