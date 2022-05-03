@@ -547,17 +547,19 @@ main {
 	.prices-container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		column-gap: 12rem;
+		// column-gap: 12rem;
 		margin: 0 auto;
 	}
 
 	.prices-left-container {
 		// border-right: 0.5px solid #000;
 		// padding-right: 4rem;
+		margin-right: 6rem;
 	}
 	.prices-right-container {
 		// border-left: 0.5px solid #000;
 		// padding-left: 4rem;
+		margin-left: 6rem;
 
 		.prices-category:last-child {
 			margin-bottom: 0;
@@ -788,6 +790,17 @@ main {
 	.prices-section {
 		.prices-container {
 			grid-template-columns: 1fr;
+		}
+
+		.prices-left-container {
+			// border-right: 0.5px solid #000;
+			// padding-right: 4rem;
+			margin-right: 0;
+		}
+		.prices-right-container {
+			// border-left: 0.5px solid #000;
+			// padding-left: 4rem;
+			margin-left: 0;
 		}
 	}
 

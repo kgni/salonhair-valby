@@ -460,9 +460,13 @@ main {
 .prices-section .prices-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  -moz-column-gap: 12rem;
-       column-gap: 12rem;
   margin: 0 auto;
+}
+.prices-section .prices-left-container {
+  margin-right: 6rem;
+}
+.prices-section .prices-right-container {
+  margin-left: 6rem;
 }
 .prices-section .prices-right-container .prices-category:last-child {
   margin-bottom: 0;
@@ -646,6 +650,12 @@ main {
 @media (max-width: 1170px) {
   .prices-section .prices-container {
     grid-template-columns: 1fr;
+  }
+  .prices-section .prices-left-container {
+    margin-right: 0;
+  }
+  .prices-section .prices-right-container {
+    margin-left: 0;
   }
 
   .find-os-section p {
