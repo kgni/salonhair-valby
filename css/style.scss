@@ -1107,7 +1107,13 @@ main {
 				}
 			}
 		}
+
 		.opening-hours-card {
+			.logo {
+				font-size: 3.6rem;
+				margin-bottom: 3.6rem;
+			}
+
 			.opening-hours {
 				.opening-hour {
 					h3 {
@@ -1166,6 +1172,10 @@ main {
 @media (max-width: 315px) {
 	.hero {
 		.opening-hours-card {
+			.logo {
+				font-size: 3rem;
+				margin-bottom: 2.4rem;
+			}
 			.opening-hours {
 				.opening-hour {
 					// gap: 3.4rem;

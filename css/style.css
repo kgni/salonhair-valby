@@ -889,6 +889,10 @@ main {
   .hero .main-nav ul li:not(:last-child) {
     margin-right: 2.4rem;
   }
+  .hero .opening-hours-card .logo {
+    font-size: 3.6rem;
+    margin-bottom: 3.6rem;
+  }
   .hero .opening-hours-card .opening-hours .opening-hour h3 {
     font-size: 1.4rem;
   }
@@ -922,6 +926,10 @@ main {
   }
 }
 @media (max-width: 315px) {
+  .hero .opening-hours-card .logo {
+    font-size: 3rem;
+    margin-bottom: 2.4rem;
+  }
   .hero .opening-hours-card .opening-hours .opening-hour h3 {
     font-size: 1.4rem;
   }
