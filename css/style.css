@@ -306,6 +306,7 @@ main {
 }
 .om-section .om-text-container p span {
   font-weight: bold;
+  color: black;
 }
 .om-section .om-text-container p:not(:last-child) {
   margin-bottom: 2rem;
