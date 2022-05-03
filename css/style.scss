@@ -365,6 +365,11 @@ main {
 		p {
 			font-size: 2rem;
 
+			span {
+				font-weight: bold;
+				// color: red;
+			}
+
 			&:not(:last-child) {
 				margin-bottom: 2rem;
 			}
