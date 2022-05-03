@@ -361,7 +361,9 @@ main {
 
 		p {
 			font-size: 2rem;
-
+			a:link {
+				color: black;
+			}
 			span {
 				font-weight: bold;
 				color: black;

@@ -304,6 +304,9 @@ main {
 .om-section .om-text-container p {
   font-size: 2rem;
 }
+.om-section .om-text-container p a:link {
+  color: black;
+}
 .om-section .om-text-container p span {
   font-weight: bold;
   color: black;
