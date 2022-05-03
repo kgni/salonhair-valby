@@ -3,7 +3,16 @@ html {
 }
 
 body {
-  font-family: "Source Serif Pro", serif;
+  font-family: "Lucida Console", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lucida Console", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1,
@@ -29,6 +38,8 @@ h3 {
 
 p {
   font-size: 1.6rem;
+  font-family: "Source Serif Pro", serif;
+  line-height: 2;
 }
 
 a:link,
@@ -38,7 +49,6 @@ a:visited {
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
-  font-family: "Source Serif Pro", serif;
   letter-spacing: 2px;
 }
 
@@ -66,20 +76,53 @@ a:hover {
 
 .loader-container h1 {
   color: #fff;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 900;
   text-align: center;
   font-size: 4.8rem;
   line-height: 1.2;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.6rem;
 }
 .loader-container h1 span {
   display: block;
   font-size: 1.4rem;
   font-weight: 600;
+  margin-top: 0.6rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
+#circle2 {
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 30px;
+  width: 30px;
+  border: 2px rgb(238, 238, 238) solid;
+  border-top: 2px rgb(0, 0, 0) solid;
+  border-radius: 50%;
+  -webkit-animation: spin2 1s infinite linear;
+  animation: spin2 1s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
 .balls {
   height: 8px;
 }
@@ -171,7 +214,7 @@ main {
 }
 .hero .opening-hours-card .logo {
   color: #fff;
-  text-transform: lowercase;
+  text-transform: capitalize;
   font-weight: 900;
   text-align: center;
   font-size: 4.8rem;
@@ -182,6 +225,7 @@ main {
   font-size: 1.4rem;
   font-weight: 600;
   text-transform: uppercase;
+  margin-top: 0.6rem;
 }
 .hero .opening-hours-card h1 {
   text-align: center;
@@ -523,6 +567,7 @@ main {
 .main-footer {
   padding: 3.2rem 0;
   background-color: #000;
+  display: none;
 }
 .main-footer .main-footer-content {
   width: 90%;
